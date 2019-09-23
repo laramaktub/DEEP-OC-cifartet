@@ -1,0 +1,37 @@
+{
+    "title": "DEEP OC cifartet",
+    "summary": "l",
+    "description": [
+		"This is cifartet application using DEEPaaS API",
+           "",
+           "**References**\n",
+           ""
+	],
+    "keywords": [
+        "docker"
+    ],
+    "license": "MIT",
+    "date_creation": "YYYY-MM-DD",
+    "sources": {
+		"dockerfile_repo": "https://github.com/laramaktub/DEEP-OC-cifartet",
+		"docker_registry_repo": "laramaktub/deep-oc-cifartet",
+		"code": "https://github.com/laramaktub/cifartet"
+	},
+    "continuous_integration": {
+        "build_status_badge": "https://jenkins.indigo-datacloud.eu/buildStatus/icon?job=Pipeline-as-code/DEEP-OC-org/DEEP-OC-cifartet/master",
+        "build_status_url": "https://jenkins.indigo-datacloud.eu/job/Pipeline-as-code/job/DEEP-OC-org/job/DEEP-OC-cifartet/job/master"
+    },
+    "tosca": [
+        {
+            "title": "Mesos (CPU)",
+            "url": "https://raw.githubusercontent.com/indigo-dc/tosca-templates/master/deep-oc/deep-oc-mesos-webdav.yml",
+            "inputs": [
+                "rclone_conf",
+                "rclone_url",
+                "rclone_vendor",
+                "rclone_user",
+                "rclone_pass"
+            ]
+        }
+    ]
+}
